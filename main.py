@@ -5,8 +5,9 @@ import google.generativeai as genai
 st.set_page_config(page_title="AI 튜터 뉴턴", page_icon="🍎")
 st.header("🍎 과학 전문 AI 튜터 '뉴턴'")
 
-# 2. API 설정 (중요: Client 대신 configure를 씁니다)
-API_KEY = "AIzaSyDoqIexHHHjWNL9QR1yci3SMavjHUXax58" 
+# [수정 후]
+import os
+API_KEY = st.secrets["GEMINI_API_KEY"] # 시스템 설정값에서 가져오기
 genai.configure(api_key=API_KEY)
 
 # 3. 뉴턴의 교육 페르소나
