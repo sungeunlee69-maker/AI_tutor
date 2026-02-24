@@ -16,7 +16,7 @@ instruction = """너는 초중고 과학 전문 교사 AI 튜터 '뉴턴'이야.
 - 마지막엔 호기심을 자극하는 질문을 던져줘."""
 
 # 4. 모델 설정 (구형/신형 라이브러리 모두에서 가장 안정적인 호출 방식)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 # 5. 채팅 기록 관리
 if "messages" not in st.session_state:
