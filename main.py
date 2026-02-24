@@ -1,5 +1,5 @@
 import streamlit as st
-from google.generativeai import genai
+import google.generativeai import genai
 
 # 1. 페이지 설정 및 디자인
 st.set_page_config(page_title="AI 튜터 뉴턴", page_icon="🍎", layout="centered")
